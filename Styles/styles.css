@@ -2,25 +2,30 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   background-color: #2b192f;
   color: white;
   font-family: "Montserrat";
 }
+
 a {
   color: white;
   text-decoration: none;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 .hero-wrapper {
   background: url("../Images/bg-1.jpg");
   background-size: cover;
 }
+
 .wrapper {
   padding: 1.5em;
   max-width: 1200px;
@@ -30,44 +35,45 @@ ul {
 header {
   display: flex;
   justify-content: space-between;
-
-  .logo {
-    font-weight: bold;
-  }
-  ul {
-    display: flex;
-    li a {
-      padding: 0 0.6em;
-    }
-  }
 }
+header .logo {
+  font-weight: bold;
+}
+header ul {
+  display: flex;
+}
+header ul li a {
+  padding: 0 0.6em;
+}
+
 .hero-content {
   margin: 4em 0 6em;
-
-  .subtitle {
-    margin-bottom: 0;
-  }
+}
+.hero-content .subtitle {
+  margin-bottom: 0;
 }
 
 .light-purple-wrapper {
   background: #351f3a;
 }
+
 .stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   justify-content: space-around;
   margin-top: 2em;
-  li {
-    margin-bottom: 1.5em;
-  }
-  strong {
-    font-size: 1.4em;
-  }
-  span {
-    font-size: 0.75em;
-    text-transform: uppercase;
-  }
 }
+.stats li {
+  margin-bottom: 1.5em;
+}
+.stats strong {
+  font-size: 1.4em;
+}
+.stats span {
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
 .arrows {
   display: none;
 }
@@ -80,12 +86,13 @@ header {
 
 ul.carousal {
   margin-bottom: 1em;
-  li {
-    background-color: #422847;
-    padding: 1em;
-    margin-bottom: 1em;
-  }
 }
+ul.carousal li {
+  background-color: #422847;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
 blockquote {
   margin: 0;
   font-size: 0.8em;
@@ -101,6 +108,7 @@ cite {
   position: relative;
   padding-left: 25px;
 }
+
 cite::before {
   content: " ";
   position: absolute;
@@ -110,6 +118,7 @@ cite::before {
   width: 20px;
   border-bottom: 1px solid white;
 }
+
 h2 {
   text-align: center;
   position: relative;
@@ -127,15 +136,15 @@ h2::before {
 .companies {
   text-align: center;
   opacity: 0.4;
-  li {
-    margin: 2em 0;
-  }
-  .skillshare {
-    width: 100px;
-  }
-  .ps {
-    width: 200px;
-  }
+}
+.companies li {
+  margin: 2em 0;
+}
+.companies .skillshare {
+  width: 100px;
+}
+.companies .ps {
+  width: 200px;
 }
 
 @media (min-width: 500px) {
@@ -148,9 +157,11 @@ h2::before {
   body {
     font-size: 18px;
   }
+
   .wrapper {
     padding: 1.5em 4em;
   }
+
   .carousal-container {
     display: flex;
   }
@@ -161,22 +172,22 @@ h2::before {
     cursor: pointer;
     margin: 0.5em;
   }
+
   .right {
     transform: rotateZ(180deg);
   }
+
   ul.carousal {
     display: flex;
     margin-bottom: 0;
-
-    li {
-      margin-right: 1em;
-      margin-bottom: 0;
-      padding: 2em;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
+  }
+  ul.carousal li {
+    margin-right: 1em;
+    margin-bottom: 0;
+    padding: 2em;
+  }
+  ul.carousal li:last-child {
+    margin-right: 0;
   }
 
   .companies {
@@ -184,7 +195,6 @@ h2::before {
     justify-content: space-between;
   }
 }
-
 @media (min-width: 853px) {
   body {
     font-size: 20px;
@@ -199,16 +209,20 @@ h2::before {
   .companies {
     grid-template-columns: repeat(4, auto);
   }
+
   h1 {
     font-size: 2.5em;
   }
+
   .subtitle {
     font-size: 1.2em;
   }
+
   h2 {
     text-align: left;
     font-size: 2em;
   }
+
   .v-padding {
     padding: 4em;
   }
@@ -216,18 +230,17 @@ h2::before {
   .light-purple-wrapper {
     padding-bottom: 4em;
   }
+
   .move-up {
     margin-top: -7em;
   }
 }
-
 @media (min-width: 1200px) {
   .stats li {
-    border-right: 1px solid rgb(124, 89, 148);
-    padding:0 4%;
-
-    &:last-child {
-      border: 0;
-    }
+    border-right: 1px solid #7c5994;
+    padding: 0 4%;
   }
-}
+  .stats li:last-child {
+    border: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */
