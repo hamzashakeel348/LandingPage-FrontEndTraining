@@ -185,6 +185,7 @@ h2::before {
     margin-right: 1em;
     margin-bottom: 0;
     padding: 2em;
+    width: 100%;
   }
   ul.carousal li:last-child {
     margin-right: 0;
